@@ -6,16 +6,18 @@
 
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
   height: 2.2rem;
 }
+
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -45,6 +47,25 @@
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -102,6 +123,7 @@
   color: #cf711f;
   font-weight: 700;
 }
+
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
@@ -126,6 +148,7 @@
   filter: brightness(0);
   opacity: 50%;
 }
+
 .section-how {
   padding: 9.6rem 0;
 }
@@ -178,6 +201,7 @@
 
 .step-img {
   width: 35%;
+  /* z-index: 10; */
 }
 .section-meals {
   padding: 9.6rem 0;
@@ -260,7 +284,6 @@
   text-align: center;
   font-size: 1.8rem;
 }
-
 .section-testimonials {
   background-color: #fdf2e9;
   display: grid;
@@ -316,31 +339,30 @@
 .gallery-item img:hover {
   transform: scale(1.1);
 }
-
 .section-pricing {
   padding: 9.6rem 0;
 }
 
-.princing-plan {
+.pricing-plan {
   border-radius: 11px;
 
   width: 75%;
 }
 
-.princing-plan--starter {
+.pricing-plan--starter {
   justify-self: end;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
 }
 
-.princing-plan--complete {
+.pricing-plan--complete {
   background-color: #fdf2e9;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
 
-.princing-plan--complete::after {
+.pricing-plan--complete::after {
   content: "Best value";
   position: absolute;
   top: 6%;
@@ -420,6 +442,7 @@
   font-size: 1.8rem;
   line-height: 1.8;
 }
+
 .section-cta {
   padding: 4.8rem 0 12.8rem;
 }
@@ -427,7 +450,6 @@
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
 
@@ -498,7 +520,6 @@
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
-
 .footer {
   padding: 12.8rem 0;
   border-top: 1px solid #eee;

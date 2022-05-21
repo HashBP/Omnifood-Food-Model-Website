@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -13,9 +14,10 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  overflow-x: hidden;
 }
 .container {
-  /* 1140px */
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
@@ -25,9 +27,8 @@ body {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-
-  /* margin-bottom: 9.6rem; */
 }
+
 
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
@@ -45,9 +46,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-}
 
 .grid--center-v {
   align-items: center;
@@ -58,6 +56,7 @@ body {
 .heading-tertiary {
   font-weight: 700;
   color: #333;
+  letter-spacing: -0.5px;
 }
 
 .heading-primary {
@@ -99,6 +98,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
+  /* Only necessary for .btn */
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -125,7 +125,6 @@ body {
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #fdf2e9;
-
   box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -169,6 +168,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
